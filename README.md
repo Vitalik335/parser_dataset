@@ -25,7 +25,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/open-data-scraper.git
+git clone [https://github.com/Vitalik335/parser_dataset]
 cd open-data-scraper
 Install dependencies:
 
