@@ -133,21 +133,13 @@ def save_results(data, filename_prefix):
             print("Excel export skipped - openpyxl module missing")
         else:
             raise
-
+# ("type here what do you want", 'year','type of save document'),
 def run_all_searches():
     # Define all search combinations
     search_combinations = [
         # Format: (search_term, year_filter, filename_prefix)
-        ("artificial+intelligence", 2024, "ai_urls_2024"),
-        ("artificial+intelligence", 2025, "ai_urls_2025"),
-        ("enhanced+reality", 2024, "enhanced_reality_urls_2024"),
-        ("enhanced+reality", 2025, "enhanced_reality_urls_2025"),
-        ("bit+coin", 2024, "bitcoin_urls_2024"),
-        ("bit+coin", 2025, "bitcoin_urls_2025"),
-        ("cloud+computing", 2024, "cloud_computing_urls_2024"),
-        ("cloud+computing", 2025, "cloud_computing_urls_2025"),
-        ("cutting-edge+technologies", 2024, "cutting_edge_tech_urls_2024"),
-        ("cutting-edge+technologies", 2025, "cutting_edge_tech_urls_2025")
+        ("type here what do you want", 'year','type of save document'),
+        ("type here what do you want", 'year','type of save document')
     ]
     
     for search_term, year_filter, filename_prefix in search_combinations:
