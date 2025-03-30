@@ -4,11 +4,11 @@ from datetime import datetime
 import os
 import pandas as pd
 import time
-
+# years change from to 
 def is_valid_year(date_string):
     try:
         date = datetime.strptime(date_string, '%b %d, %Y')
-        return date.year in [2024, 2025]
+        return date.year in [years, years]
     except ValueError:
         return False
 
@@ -130,14 +130,11 @@ def scrape_search_term(search_term, filename_prefix):
         print(f"Saved {len(all_data)} records to {txt_file}\n")
     else:
         print(f"No valid datasets found for '{search_term}'\n")
-
+# what do you want to find
 def main():
     search_terms = [
-        ("artificial intelligence", "ai_research"),
-        ("enhanced reality", "enhanced_reality"),
-        ("bit coin", "bit_coin"),
-        ("cloud computing", "cloud_computing"),
-        ("cutting-edge technologies", "cutting_edge_tech")
+        ("something","something"),
+        ("something", "something")
     ]
     
     print("Starting scraping process...\n")
