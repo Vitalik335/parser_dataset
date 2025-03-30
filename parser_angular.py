@@ -97,19 +97,16 @@ def save_results(data, filename_prefix):
 
 if __name__ == "__main__":
     print("Запуск парсинга...")
-
+# here type what do you want to search
     search_terms = [
-        "artificial intelligence",
-        "enhanced reality",
-        "bit coin",
-        "cloud computing",
-        "cutting-edge technologies"
+        "here",
+        "here"
     ]
-
+# years change
     for term in search_terms:
         filename_prefix = term.replace(" ", "_").lower()
         print(f"\n==== Парсим '{term}' ====")
-        datasets = scrape_research_datasets(term, 2024, 2026)
+        datasets = scrape_research_datasets(term, years, years)
         save_results(datasets, filename_prefix)
 
     print("\nПарсинг завершен для всех запросов!")
