@@ -1,5 +1,6 @@
+🚨 Important Note: This is a project completed under tight deadlines. Due to time constraints, I was unable to collect all the data and polish the project. The main goal was to fulfill the assignment requirements as quickly as possible. 🚨
 🌎 Open Data Web Scraper
-This project is a web scraper designed to collect open data from government portals. It works for some websites, while others require a different approach due to their React-based architecture. Additionally, the project includes AnalyzeAI, a tool that processes collected data using OpenAI.
+This project is a simple web scraper designed to collect open data from government portals. It works for some websites, but due to the dynamic architecture of others (such as React-based websites), a different approach is required. Additionally, the project includes AnalyzeAI, a tool that processes the collected data using OpenAI to generate key insights.
 
 📌 Supported Websites
 ✅ 🇬🇧 data.gov.uk
@@ -8,10 +9,10 @@ This project is a web scraper designed to collect open data from government port
 ✅ 🇳🇿 data.govt.nz
 ✅ 🇮🇪 data.gov.ie
 
-Some websites use dynamic content loading with React, requiring a different scraping approach (e.g., Selenium or Puppeteer instead of BeautifulSoup).
+Some of these websites use dynamic content loading (e.g., with React), so a different scraping method (such as Selenium or Puppeteer) is needed instead of BeautifulSoup.
 
 🔍 AnalyzeAI – Data Processing with OpenAI
-The AnalyzeAI script processes the collected datasets and extracts key information using OpenAI. It generates:
+The AnalyzeAI script processes the datasets collected by the scraper and generates the following key information using OpenAI:
 
 URL (link to the dataset)
 
@@ -24,7 +25,7 @@ Python
 
 BeautifulSoup / Scrapy – For static HTML scraping
 
-Selenium – For dynamic content scraping
+Selenium – For scraping React-based websites with dynamic content
 
 Requests – To fetch web pages
 
@@ -33,7 +34,7 @@ Pandas – For data processing
 OpenAI API – For dataset analysis
 
 📦 Installation
-It is recommended to use a virtual environment:
+It is highly recommended to set up a virtual environment for this project:
 
 bash
 Copy
@@ -41,20 +42,24 @@ Edit
 python -m venv venv
 source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate  # On Windows
-Then, install the required dependencies:
+Then, install the necessary dependencies:
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
 🚀 Usage
-Run the scraper:
+To run the scraper:
 bash
 Copy
 Edit
-python type witch file do you want for example parser.py
-Run AnalyzeAI:
+type witch file do you want for example python parser.py
+To run the AnalyzeAI script:
 bash
 Copy
 Edit
 python analyze_ai.py
+📜 License
+This project is licensed under the MIT License.
+
+
